@@ -1,4 +1,4 @@
-# Python Coding-test-problem
+# 알고리즘 문제 풀이를 통한 문제 해결 능력 기르기
 
 Baekjoon Problems
 
