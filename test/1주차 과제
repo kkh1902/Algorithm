@@ -1,0 +1,107 @@
+# 1주차 -1 
+SCORE = int(input())
+
+if(SCORE>100):
+    print("입력값이 올바르지 않습니다.")
+elif(SCORE>95):
+    print("A+")
+elif(SCORE>90):
+    print("A")
+elif(SCORE>85):
+    print("B+")
+elif(SCORE>80):
+    print("B")
+elif(SCORE>75):
+    print("C+")
+elif(SCORE>70):
+    print("C")
+elif(SCORE>65):
+    print("D+")
+elif(SCORE>60):
+    print("D")
+elif(SCORE>0):
+    print("F") 
+else:
+    print("입력값이 올바르지 않습니다.")   
+  
+# 2번 문제
+TIME = int(input())
+
+HOUR = TIME// 3600
+MIN = (TIME % 3600)//60
+SEC = TIME % 60
+
+print("%d시간 %d분 %d초" %(HOUR,MIN,SEC))
+
+# 3번 문제
+X, Y = input().split()
+
+X= int(X)
+Y= int(Y)
+
+if (X>0 and Y>0):
+    print("1")
+elif(X>0 and Y<0):
+    print("4")
+elif(X<0 and Y>0):
+    print("2")
+elif(X<0 and Y<0):
+    print("3")
+else:
+    print("오류")
+    
+# 4번 문제
+for i in range(1, 10):
+    j = 0
+    while j != 3:
+        j += 1
+        print("%d*%d=%d" %(j,i,i*j), end = "\t")
+    print("") # 자체적인 줄바굼, "\n" 결과적으로 줄바꿈을 2번 기본적으로 1번은 줄 바꿈이 있음
+print("")
+for i in range(1, 10):
+    j = 3
+    while j != 6:
+        j += 1
+        print("%d*%d=%d" %(j,i,i*j), end = "\t")
+    print("")
+print("")
+for i in range(1, 10):
+    j = 6
+    while j != 9:
+        j += 1
+        print("%d*%d=%d" %(j,i,i*j), end = "\t")
+    print("")
+# 5 번 문제
+ N = int(input())
+space = 0
+
+for i in range(N ,1, -2):
+    setNumber = i
+    print(" " * space + "*" * setNumber)
+    space+=1
+    if i==1 or i==0: break
+print(" " * space + "*")
+
+# 50 factorial
+sum = 1
+for i in range (1,51):
+    sum = sum * i
+print(sum)
+
+# 구구단(세로로)
+for i in range(1, 10):
+    for j in range(1,8,3):
+        print('{} * {} = {}'.format(j, i , i*j), end="\t")
+    print("")
+print("")
+for i in range(1, 10):
+    for j in range(2,9,3):
+        print('{} * {} = {}'.format(j, i , i*j), end="\t")
+    print("")
+print("")
+for i in range(1, 10):
+    for j in range(3,10,3):
+        print('{} * {} = {}'.format(j, i , i*j), end="\t")
+    print("") # print 는 자체적으로 enter 가 한번 드감
+
+
