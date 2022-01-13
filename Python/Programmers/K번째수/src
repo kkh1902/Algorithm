@@ -10,3 +10,7 @@ def solution(array, commands):
         arr.sort()
         answer.append(arr[_[2]-1])
     return answer
+
+## 다른 풀이 (해석필요)
+def solution(array, commands):
+    return list(map(lambda x:sorted(array[x[0]-1:x[1]])[x[2]-1], commands))
