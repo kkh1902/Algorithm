@@ -38,3 +38,18 @@ for i in range(1, 24) :  #카운트한 값을 공백을 두고 출력
 리스트는 변수들을 모아 놓은 변수라고 생각할 수도 있고, 참조번호를 이용해 간단하고 편리하게 사용할 수 있다.
 
 <Src>
+n = int(input())
+a = input().split()
+
+for i in range(n) :
+  a[i] = int(a[i])
+
+d = []
+for i in range(24) :
+  d.append(0)
+
+for i in range(n) :
+  d[a[i]] += 1
+
+for i in range(1, 24) :
+  print(d[i], end=' ')
