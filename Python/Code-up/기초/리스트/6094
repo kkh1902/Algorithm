@@ -17,3 +17,23 @@
 그런데, 가장 작은 값은 어떻게 어떤 것과 비교하고, 어떻게 찾아야 할까?
 
 <Src>
+정석 풀이
+n = int(input())
+a = input().split()
+
+for i in range(n) :
+  a[i] = int(a[i])
+
+min = a[0]
+for i in range(0, n) :
+  if a[i] < min :  # 첫째값을 기준으로 삼아서 계속 돌려서 최솟값나오는거 그게 최솟값이다.
+    min = a[i]
+
+print(min)
+
+내풀이
+n = int(input())
+a = list(map(int, input().split()))
+
+print(min(a))
+
