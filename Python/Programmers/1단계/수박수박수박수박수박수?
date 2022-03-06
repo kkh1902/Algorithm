@@ -17,3 +17,8 @@ def solution(n):
         else :
             s = s + "수"
     return s
+    
+<another Src>
+def water_melon(n):
+    s = "수박" * n
+    return s[:n]
