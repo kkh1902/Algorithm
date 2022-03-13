@@ -29,5 +29,6 @@ def solution(x):
         sum+=x[i]
 
     return True if (k%sum ==0) else False
-    
+
+list를 재정의 한다.
   
