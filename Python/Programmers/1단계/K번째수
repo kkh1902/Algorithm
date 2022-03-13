@@ -14,3 +14,5 @@ def solution(array, commands):
 ## 다른 풀이 (해석필요)
 def solution(array, commands):
     return list(map(lambda x:sorted(array[x[0]-1:x[1]])[x[2]-1], commands))
+ 
+list를 사용하는데 map 함수를 쓰고 function , itreable객체를 사용한다.
