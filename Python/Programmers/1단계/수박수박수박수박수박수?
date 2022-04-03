@@ -22,3 +22,7 @@ def solution(n):
 def water_melon(n):
     s = "수박" * n
     return s[:n]
+
+<Src>
+def solution(n):
+    return "".join(["수박"[i%2] for i in range(n)])
