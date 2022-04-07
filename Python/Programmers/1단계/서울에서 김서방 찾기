@@ -14,3 +14,10 @@ seoul	return
 def solution(seoul):
     answer = "김서방은 {}에 있다".format(seoul.index("Kim"))
     return answer
+
+def findKim(seoul):
+    kimIdx = 0
+    # 함수를 완성하세요
+    for i in range(len(seoul)):
+        if seoul[i]=="Kim":
+            return "김서방은 {}에 있다".format(i)
