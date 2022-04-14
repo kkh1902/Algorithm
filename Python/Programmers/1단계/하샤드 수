@@ -31,4 +31,5 @@ def solution(x):
     return True if (k%sum ==0) else False
 
 list를 재정의 한다.
-  
+ 
+하샤드 수
