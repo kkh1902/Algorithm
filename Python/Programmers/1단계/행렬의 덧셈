@@ -17,3 +17,7 @@ def solution(arr1, arr2):
             arr[k][j] = (arr1[k][j] + arr2[k][j])
     arr = [arr[k][j] = (arr1[k][j] + arr2[k][j]) for k in range(len(arr1)) for j in range(len(arr1[0]))]
     return arr
+
+def sumMatrix(A,B):
+    answer = [[c + d for c, d in zip(a, b)] for a, b in zip(A,B)]
+    return answer
