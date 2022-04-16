@@ -21,3 +21,5 @@ def solution(arr1, arr2):
 def sumMatrix(A,B):
     answer = [[c + d for c, d in zip(a, b)] for a, b in zip(A,B)]
     return answer
+    
+행렬의 덧셈
