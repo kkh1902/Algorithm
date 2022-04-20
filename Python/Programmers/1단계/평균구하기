@@ -12,3 +12,5 @@ arr	return
 <Src>
 def solution(arr):
     return (sum(arr) / len(arr))
+
+평균구하기
