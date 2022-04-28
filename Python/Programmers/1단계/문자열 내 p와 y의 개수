@@ -26,6 +26,7 @@ def solution(s):
     
     return a==b
     
+    
 <Src>
 def numPY(s):
     # 함수를 완성하세요
