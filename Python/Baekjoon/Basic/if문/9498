@@ -12,6 +12,7 @@
 예제 출력 1 
 A
 
+
 <Src>
 a=int(input())
 if a>=90: print('A')
