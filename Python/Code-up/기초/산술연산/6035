@@ -11,6 +11,7 @@ print(m)
 참고
 수 * 수는 곱(multiplication)이 계산된다.
 
+
 <Code>
 f1, f2 = input().split()
 m = float(f1)*float(f2)
