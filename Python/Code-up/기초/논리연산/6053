@@ -8,6 +8,7 @@
 a = bool(int(input()))
 print(not a)
 
+
 참고
 a = bool(int(input()))
 와 같은 형태로 겹쳐 작성하면, 한 번에 한 단계씩 계산/처리/평가된다.
