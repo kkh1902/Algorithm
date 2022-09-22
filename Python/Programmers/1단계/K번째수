@@ -10,6 +10,7 @@ def solution(array, commands):
         arr.sort()
         answer.append(arr[_[2]-1])
     return answer
+    
 
 ## 다른 풀이 (해석필요)
 def solution(array, commands):
