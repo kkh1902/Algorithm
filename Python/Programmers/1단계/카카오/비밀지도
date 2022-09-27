@@ -1,0 +1,65 @@
+a = 9
+n = 5
+b = bin(a)[2:]
+
+print(b)
+
+c = str(b).zfill(5)
+
+print(c)
+
+
+arr1 = [9, 20, 28, 18, 11]
+arr2 = [30, 1, 21, 17, 28]
+cnt = 0
+
+for a, b in zip(arr1, arr2):
+    arr1[cnt] = str(bin(a)[2:]).zfill(5)
+    arr2[cnt] = str(bin(b)[2:]).zfill(5)
+    cnt += 1
+
+# ['01001', '10100', '11100', '10010', '01011'] ['11110', '00001', '10101', '10001', '11100']
+
+# arr3 = []
+
+arr3 = ['', '', '', '', '']
+arr4= []
+
+g = ''
+
+for i in range(n):
+    arr4.append(g)
+
+for i in range(n):
+    for j in range(n):
+        if arr1[i][j] == "1" or arr2[i][j] == "1":
+            arr4[i] += "#"
+        else :
+            arr4[i] += " "
+
+print(arr3)
+print(arr4)
+
+
+programmers
+def solution(n, arr1, arr2):
+    cnt = 0
+    g = ''
+    answer = []
+    
+    for a, b in zip(arr1, arr2):
+        arr1[cnt] = str(bin(a)[2:]).zfill(n)
+        arr2[cnt] = str(bin(b)[2:]).zfill(n)
+        cnt += 1
+    
+    for i in range(n):
+        answer.append(g)
+        
+    for i in range(n):
+        for j in range(n):
+            if arr1[i][j] == "1" or arr2[i][j] == "1":
+                answer[i] += "#"
+            else :
+                answer[i] += " "
+            
+    return answer
