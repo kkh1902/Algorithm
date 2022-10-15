@@ -1,0 +1,34 @@
+
+def solution(X, Y):
+    answer = []
+    answer2 = ''
+
+    X = list(X)
+    Y = list(Y)
+
+    
+    for i in range(0,10):
+        if X.count(str(i)) <= Y.count(str(i)):
+            count = X.count(str(i))
+        else:
+            count = Y.count(str(i))
+        answer.append(count)
+
+
+    for i in range(0,10):
+        #  반복하는 횟수 answer[i]
+        answer2 += str(i)  * answer[i] 
+
+    answer2 = list(answer2)
+    answer2.sort(reverse= True)
+    answer2= "".join(answer2)
+   
+
+    if answer2 == "" :
+        answer2 = "-1"
+    elif sum(list(map(int,answer2))) ==0:
+        answer2 = "0"
+    
+
+
+    return answer2
