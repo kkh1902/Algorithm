@@ -1,0 +1,33 @@
+def solution(lottos, win_nums):
+    answer = []
+    cnt = lottos.count(0)
+
+
+
+    if lottos == win_nums:
+        best_rank = 1
+        worst_rank = 6
+
+    else:
+        lottos2 = set(lottos)
+        with_nums2 = set(win_nums)
+
+
+    correct =len(lottos2 & with_nums2)
+
+    best= correct + cnt
+    worst = correct
+
+    best_rank = len(lottos)- best +1
+    worst_rank = len(lottos) - worst +1
+
+    if worst_rank >= 6 :
+        worst_rank =6
+    
+    if correct == 0 and cnt != len(lottos):
+        best_rank = 6
+    
+    answer.append(best_rank)
+    answer.append(worst_rank)
+
+    return answer
