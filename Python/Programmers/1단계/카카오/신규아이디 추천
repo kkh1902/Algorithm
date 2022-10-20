@@ -1,0 +1,49 @@
+import string
+def solution(new_id):
+    answer = ''
+    answer= ''
+
+    # 1단계 대문자를 소문자로 바꿔준다.
+    answer = new_id.lower()
+
+    # 2단계 특수문자 제거 (-, _ , .) 제외
+    symbols = string.punctuation.replace('-','').replace('_','').replace('.','')
+
+    for symbol in symbols:
+        answer = answer.replace(symbol,"")
+
+
+    # 3단계 
+    
+    while '..' in answer:
+        answer = answer.replace('..', '.')
+
+    # 4단계
+    if answer[0] == '.':
+        if len(answer) >= 2:
+            answer = answer[1:]
+    
+    if answer[-1] == '.':
+        answer = answer[:-1]
+    
+    
+    # 5단계 빈문자열 이면 a로 채워라
+
+    if answer == '':
+        answer = "a"
+    else:
+        answer
+
+    # 6단계
+    
+    if len(answer) >= 16:
+        answer = answer[:15]
+        if answer[-1] == ".":
+            answer = answer[:-1]
+        
+    # 7단계
+
+    if len(answer) < 3:
+        answer = answer + answer[-1] * (3 - len(answer))
+
+    return answer
