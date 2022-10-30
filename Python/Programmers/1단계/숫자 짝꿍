@@ -15,6 +15,7 @@ def solution(X, Y):
         answer.append(count)
 
 
+
     for i in range(0,10):
         #  반복하는 횟수 answer[i]
         answer2 += str(i)  * answer[i] 
