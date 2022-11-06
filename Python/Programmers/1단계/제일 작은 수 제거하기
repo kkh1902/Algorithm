@@ -16,5 +16,6 @@ def solution(arr):
     arr.remove(min(arr))
     return arr if not len(arr) == 0 else [-1]
 
+
 def rm_small(mylist):
     return [i for i in mylist if i > min(mylist)]
