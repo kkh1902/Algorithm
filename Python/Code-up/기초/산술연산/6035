@@ -8,6 +8,7 @@
 m = float(f1) * float(f2)
 print(m)
 
+
 참고
 수 * 수는 곱(multiplication)이 계산된다.
 
