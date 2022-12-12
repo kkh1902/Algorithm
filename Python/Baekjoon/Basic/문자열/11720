@@ -18,5 +18,6 @@ N개의 숫자가 공백 없이 쓰여있다. 이 숫자를 모두 합해서 출
 예제 출력 2 
 15
 
+
 <Src>
 input();print(sum(map(int,input())))
