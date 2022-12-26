@@ -1,0 +1,19 @@
+def Jaden_Case(s):
+    answer =[]
+    for i in range(len(s.split())):
+        answer.append(s.split()[i][0].upper() + s.split()[i].lower()[1:]) 
+    return " ".join(answer)
+    
+    
+    
+
+def Jaden_Casen(s):
+    a = s.split(" ")
+    b = []
+    for i in a:
+        b.append(i.capitalize())
+    answer = " ".join(b)
+    return answer
+
+def Jaden_Casen(s):
+  return s.title()
