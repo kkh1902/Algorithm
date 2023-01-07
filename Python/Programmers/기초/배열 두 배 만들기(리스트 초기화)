@@ -1,0 +1,23 @@
+def solution(numbers):
+    for i in range(len(numbers)):
+        numbers[i] = numbers[i] *2
+    return numbers
+    
+    
+def solution(numbers):
+    return [num*2 for num in numbers]
+
+
+def solution(numbers):
+    return list(map(lambda x: x * 2, numbers))
+    
+    
+import numpy as np
+
+def solution(numbers):
+    answer = []
+    answer = np.array(numbers)*2
+    answer = answer.tolist()
+
+
+    return answer
