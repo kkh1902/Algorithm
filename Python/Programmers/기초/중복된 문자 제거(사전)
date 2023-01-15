@@ -1,0 +1,11 @@
+def solution(my_string):
+    return ''.join(dict.fromkeys(my_string))
+    
+#
+x = ('key1', 'key2', 'key3')
+
+thisdict = dict.fromkeys(x,10)
+
+print(thisdict)
+
+{'key1': 10, 'key2': 10, 'key3': 10}
