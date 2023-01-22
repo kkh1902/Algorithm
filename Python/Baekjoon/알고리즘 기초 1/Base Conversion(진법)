@@ -7,6 +7,7 @@ arr = list(map(int,input().split()))
 #10진수부터 구할까
 arr.reverse()
 
+
 ten = 0
 for i in range(m):
     ten += arr[i]*(a**i)
