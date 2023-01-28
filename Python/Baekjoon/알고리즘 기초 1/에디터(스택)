@@ -4,6 +4,7 @@ import sys
 st1 = list(sys.stdin.readline().rstrip())
 st2 = []
 
+
 for _ in range(int(sys.stdin.readline())):
 	command = list(sys.stdin.readline().split())
     if command[0] == 'L':
