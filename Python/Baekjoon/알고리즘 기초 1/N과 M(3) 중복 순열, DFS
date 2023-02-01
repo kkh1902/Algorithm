@@ -1,0 +1,26 @@
+# 중복 순열 
+from itertools import product
+N, M = map(int, input().split())
+cb =[i for i in range(1,N+1)]
+
+for i in product(cb, repeat=M):
+    for j in i:
+        print(j, end=' ')
+    print(end = '\n')
+    
+    
+#DFS
+n,m= map(int,input().split())
+ 
+s = []
+ 
+def dfs():
+    if len(s)==m:
+        print(' '.join(map(str,s)))
+        return
+    
+    for i in range(1,n+1):
+        s.append(i)
+        dfs()
+        s.pop()
+dfs()
