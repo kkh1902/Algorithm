@@ -3,6 +3,7 @@ a,b = map(int,input().split())
 m = int(input())
 #m번 반복하라고 준거겠지?
 
+
 arr = list(map(int,input().split()))
 #10진수부터 구할까
 arr.reverse()
