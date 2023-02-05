@@ -3,6 +3,7 @@ input=sys.stdin.readline
 
 tc=int(input())
 
+
 dp=[[0 for _ in range(3)] for i in range(100001)]
 
 
