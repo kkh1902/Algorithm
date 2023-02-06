@@ -1,0 +1,39 @@
+# Two pointer
+
+def solution(people, limit):
+    people.sort()
+    count = 0
+
+    first = 0
+    last = len(people) - 1
+    while first < last:
+        if people[first] + people[last] <= limit:
+            first += 1
+
+        last -= 1
+
+        count += 1
+
+    if first == last:
+        count += 1
+
+    return count
+
+#Deque
+
+from collections import deque
+def solution(people, limit):
+    answer = 0
+    people.sort()
+    dq = deque(people)
+    answer = 0
+    while len(dq) > 1:
+        if dq[0] + dq[-1] <= limit:
+            dq.popleft()
+        answer +=1
+        dq.pop()
+
+    if dq:
+        answer+=1
+
+    return answer
