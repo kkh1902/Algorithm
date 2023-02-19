@@ -1,5 +1,6 @@
 import math
 
+
 def solution(denum1, num1, denum2, num2):
     # 1. 두 분수의 합 계산
     boonmo = num1 * num2
