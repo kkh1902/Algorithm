@@ -5,6 +5,7 @@ input = sys.stdin.readline
 n,m = map(int, input().split())
 maze = []
 
+
 for i in range(n):
     maze.append(list(map(int,input().strip())))
 
