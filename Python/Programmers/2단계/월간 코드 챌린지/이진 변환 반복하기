@@ -17,6 +17,7 @@ def solution(x):
     return answer
 
 
+
 def solution(s):
     a, b = 0, 0
     while s != '1':
