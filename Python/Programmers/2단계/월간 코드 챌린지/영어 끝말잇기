@@ -14,5 +14,6 @@ def solution(n, words):
             answer[1] = cnt//n +1  # 탈락차례
             break
 
+
     return answer
  
