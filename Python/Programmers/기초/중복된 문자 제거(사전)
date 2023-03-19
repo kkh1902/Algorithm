@@ -2,6 +2,7 @@ def solution(my_string):
     return ''.join(dict.fromkeys(my_string))
     
     
+    
 #
 x = ('key1', 'key2', 'key3')
 
