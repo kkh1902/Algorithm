@@ -13,4 +13,5 @@ thisdict = dict.fromkeys(x,10)
 
 print(thisdict)
 
+
 {'key1': 10, 'key2': 10, 'key3': 10}
