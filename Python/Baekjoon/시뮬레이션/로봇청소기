@@ -28,6 +28,7 @@ while 1:
                 sw = True
                 break
 
+
     # 4방향 모두 있지 않은경우
     if sw == False:
         # 뒤쪽 방향이 막혀있는 지확인
