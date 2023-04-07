@@ -16,6 +16,7 @@ zZa
 예제 출력 2 
 Z
 
+
 <Src>
 word = input().upper()
 word_list = list(set(word))
