@@ -10,6 +10,7 @@ graph = [[False] * (N + 1) for _ in range(N + 1)]
 print("graph =", graph)
 print("graphlen=", len(graph))
 
+
 for _ in range(M):
     a, b = map(int, input().split())
     graph[a][b] = True
