@@ -6,6 +6,7 @@ def solution(array):
     return -1
     
     
+    
 def solution(array: list) -> int:
     dict = {}
 
