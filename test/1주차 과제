@@ -23,7 +23,8 @@ elif(SCORE>0):
     print("F") 
 else:
     print("입력값이 올바르지 않습니다.")   
-  
+
+
 # 2번 문제
 TIME = int(input())
 
