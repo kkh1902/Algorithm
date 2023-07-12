@@ -19,6 +19,7 @@ def solution(array: list) -> int:
         else:
             dict[num] += 1
 
+
     # 딕셔너리의 벨류값 기준으로 desc 정렬
     result = sorted(dict.items(), key=lambda x: x[-1], reverse=True)
 
