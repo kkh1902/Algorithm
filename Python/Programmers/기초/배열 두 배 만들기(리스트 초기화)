@@ -12,7 +12,8 @@ def solution(numbers):
 def solution(numbers):
     return list(map(lambda x: x * 2, numbers))
     
-    
+
+
 import numpy as np
 
 
