@@ -30,6 +30,7 @@ def solution(s):
 
 
 
+
 def solution(s):
     from collections import Counter
     cnt, zero = 0, 0
