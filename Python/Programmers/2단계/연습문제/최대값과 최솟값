@@ -1,7 +1,8 @@
 def solution(s):
     s = list(map(int,s.split()))
     return str(min(s)) + " " + str(max(s))
-    
+
+
     s.split() -> ["1", "2", "3", "4"]
     map 객체를 list로 변활 필요
     문자열 붙이기는 -> str (문자만 가능)
