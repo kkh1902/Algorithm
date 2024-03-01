@@ -13,7 +13,8 @@ for i in product(cb, repeat=M):
 n,m= map(int,input().split())
  
 s = []
- 
+
+
 def dfs():
     if len(s)==m:
         print(' '.join(map(str,s)))
