@@ -21,6 +21,7 @@ def solution(people, limit):
 
 #Deque
 
+
 from collections import deque
 def solution(people, limit):
     answer = 0
