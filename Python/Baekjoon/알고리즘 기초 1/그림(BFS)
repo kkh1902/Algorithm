@@ -22,6 +22,7 @@ m, n = map(int,input().split())
 map = [list(map(int, input().split()) for _ in range(n))]
 chk = [[False] * m for _ in range(n)]
 
+
 # 동서남북
 dy = [0,1,0,-1]
 dx = [1,0,-1,0]
