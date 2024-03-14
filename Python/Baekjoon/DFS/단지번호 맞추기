@@ -22,12 +22,12 @@ import sys
 input = sys.stdin.readline
 
 N = int(input())
-map = [list(map(int, input().strip())) for _ in range(N)]
-chk = [[False] * N for _ in range(N)]
+map = [list(map(int, input().strip())) for _ in range(N)]  // 기본 맵 2중 리스트 
+chk = [[False] * N for _ in range(N)]  // 맵 2중 리스트 갔는지 확인 
 result = []
 each = 0
-dy = [0,1,0,-1]
-dx = [1,0,-1,0]
+dy = [0,1,0,-1  // y축이동 4가지 경우의 수
+dx = [1,0,-1,0]  //  x축이동 4가지 경우의 수
 
 def dfs(y, x):
     global each
@@ -35,14 +35,14 @@ def dfs(y, x):
     for k in range(4):
         ny = y + dy[k]
         nx = x + dx[k]
-        if 0<=ny<N and 0<=nx<N:
-            if map[ny][nx] == 1 and chk[ny][nx] == False:
+        if 0<=ny<N and 0<=nx<N:  // 최대치 , 최소치 한계 설정
+            if map[ny][nx] == 1 and chk[ny][nx] == False:  //조건의 경우 초기화 
                 chk[ny][nx] = True
                 dfs(ny, nx)
 
 for j in range(N):
     for i in range(N):
-        if map[j][i] == 1 and chk[j][i] == False:
+        if map[j][i] == 1 and chk[j][i] == False: // 아닌경우
             chk[j][i] = True
             each = 0
             dfs(j,i)
