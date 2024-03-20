@@ -4,6 +4,7 @@ def solution(x):
     zero = 0
 
 
+
     while True:
         if x == '1':
             break
