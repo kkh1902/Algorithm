@@ -2,6 +2,7 @@ import sys
 input = sys.stdin.readline
 target = int(input())
 n = int(input())
+
 broken = list(map(int, input().split()))
 
 # 현재 채널에서 + 혹은 -만 사용하여 이동하는 경우
