@@ -5,6 +5,7 @@ aeiou = ['a', 'e', 'i', 'o', 'u']
 word.sort()
 amho = combinations(word, L)
 
+
 for i in amho:
     z = 0
     m = 0
