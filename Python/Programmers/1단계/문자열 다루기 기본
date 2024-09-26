@@ -6,6 +6,7 @@
 제한 사항
 s는 길이 1 이상, 길이 8 이하인 문자열입니다
 
+
 <Src>
 def solution(s):
     if (len(s) == 4 or len(s) == 6) and s.isdigit() == True:
