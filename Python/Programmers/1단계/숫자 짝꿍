@@ -3,6 +3,7 @@ def solution(X, Y):
     answer = []
     answer2 = ''
 
+
     X = list(X)
     Y = list(Y)
 
