@@ -8,6 +8,7 @@ def solution(lottos, win_nums):
         best_rank = 1
         worst_rank = 6
 
+
     else:
         lottos2 = set(lottos)
         with_nums2 = set(win_nums)
