@@ -2,6 +2,7 @@ a = 9
 n = 5
 b = bin(a)[2:]
 
+
 print(b)
 
 c = str(b).zfill(5)
