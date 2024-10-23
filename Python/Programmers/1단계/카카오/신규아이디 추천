@@ -3,6 +3,7 @@ def solution(new_id):
     answer = ''
     answer= ''
 
+
     # 1단계 대문자를 소문자로 바꿔준다.
     answer = new_id.lower()
 
