@@ -1,5 +1,6 @@
 # Two pointer
 
+
 def solution(people, limit):
     people.sort()
     count = 0
