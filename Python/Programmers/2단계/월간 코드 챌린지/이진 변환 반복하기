@@ -5,6 +5,7 @@ def solution(x):
 
 
 
+
     while True:
         if x == '1':
             break
