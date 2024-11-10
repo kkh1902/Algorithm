@@ -3,6 +3,7 @@ def solution(array):
 
 
 
+
         for i, a in enumerate(set(array)):
             array.remove(a)
         if i == 0: return a
