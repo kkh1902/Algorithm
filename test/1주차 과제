@@ -1,4 +1,5 @@
 
+
 # 1주차 -1 
 SCORE = int(input())
 
