@@ -8,6 +8,7 @@ maze = []
 
 
 
+
 for i in range(n):
     maze.append(list(map(int,input().strip())))
 
