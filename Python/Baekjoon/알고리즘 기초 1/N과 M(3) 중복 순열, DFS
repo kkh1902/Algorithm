@@ -1,4 +1,5 @@
 # 중복 순열 
+
 from itertools import product
 N, M = map(int, input().split())
 cb =[i for i in range(1,N+1)]
