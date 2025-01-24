@@ -1,4 +1,5 @@
 # 순열
+
 from itertools import permutations
 
 N, M = map(int, input().split())
