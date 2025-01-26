@@ -1,5 +1,6 @@
 # itertools import permutation 하면 메모리 초과 떠서 새로운 알고리즘이 필요했음
 
+
 n = int(input())
 data = list(map(int, input().split()))
 
