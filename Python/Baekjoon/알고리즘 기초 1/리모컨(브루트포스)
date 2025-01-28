@@ -1,6 +1,7 @@
 import sys
 input = sys.stdin.readline
 target = int(input())
+
 n = int(input())
 
 broken = list(map(int, input().split()))
