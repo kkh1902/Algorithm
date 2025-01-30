@@ -1,5 +1,6 @@
 n = int(input())
 
+
 array = []
 for _ in range(n):
     colors = list(map(str, input()))
