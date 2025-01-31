@@ -1,4 +1,5 @@
 from itertools import combinations
+
 L, C = map(int,input().split())
 word = list(map(str,input().split()))
 aeiou = ['a', 'e', 'i', 'o', 'u']
