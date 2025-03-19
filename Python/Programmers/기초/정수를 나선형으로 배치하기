@@ -1,0 +1,30 @@
+문제 설명
+양의 정수 n이 매개변수로 주어집니다. n × n 배열에 1부터 n2 까지 정수를 인덱스 [0][0]부터 시계방향 나선형으로 배치한 이차원 배열을 return 하는 solution 함수를 작성해 주세요.
+
+def solution(n):
+    # 빈 n x n 배열을 생성
+    matrix = [[0] * n for _ in range(n)]
+    
+    # 방향: 오른쪽(0), 아래(1), 왼쪽(2), 위(3)
+    direction = [(0, 1), (1, 0), (0, -1), (-1, 0)]
+    row, col, dir_idx = 0, 0, 0  # 시작 위치와 방향 설정
+    num = 1  # 배열에 넣을 숫자
+    
+    while num <= n * n:
+        # 현재 위치에 숫자 삽입
+        matrix[row][col] = num
+        num += 1
+        
+        # 다음 위치 계산
+        next_row, next_col = row + direction[dir_idx][0], col + direction[dir_idx][1]
+        
+        # 경계 체크 및 이미 채워진 위치인지 확인
+        if not (0 <= next_row < n and 0 <= next_col < n and matrix[next_row][next_col] == 0):
+            # 방향 전환 (오른쪽 -> 아래 -> 왼쪽 -> 위)
+            dir_idx = (dir_idx + 1) % 4
+            next_row, next_col = row + direction[dir_idx][0], col + direction[dir_idx][1]
+        
+        # 다음 위치로 이동
+        row, col = next_row, next_col
+    
+    return matrix
