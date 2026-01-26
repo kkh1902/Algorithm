@@ -3,6 +3,7 @@
 
 ## 1week Test-1
 
+
 ```python
 N, X = map(int,input().split())
 
