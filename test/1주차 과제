@@ -1,6 +1,7 @@
 # 1주차 -1 
 SCORE = int(input())
 
+
 if(SCORE>100):
     print("입력값이 올바르지 않습니다.")
 elif(SCORE>95):
